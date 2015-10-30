@@ -1,8 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+PURPOSE:    UnitTest for the DataLoader
+*/
+
+
 package agilenlp.TestHarness;
 
 import agilenlp.DataLoader;
@@ -18,7 +18,7 @@ public class TestDataLoader {
         start_time = new Date();
         ArrayList movies = DataLoader.GetMovies();
         ArrayList plotsummaries = DataLoader.GetPlotSummaries();
-        ArrayList characters = DataLoader.GetCharacter();
+        ArrayList characters = DataLoader.GetCharacters();
         ArrayList namecluster = DataLoader.GetNameClusters();
         end_time = new Date();
 

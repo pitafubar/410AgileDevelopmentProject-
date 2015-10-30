@@ -1,8 +1,14 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+PURPOSE:    Object which represents each individual charachter and all fields associated with the charachter
+
+NOTES:      THE CHARACHTER CLASS REPRESENTS ALL FIELDS LOADED VIA CHARACTER TSV FILE
+            CONSTRUCTOR TAKES STRING ARRAY WHICH REPRESENTS SINGLE LINE FROM TSV FILE 
+
+DATA EXAMPLE
+975900	/m/03vyhn	2001-08-24	Akooshay	1958-08-26	F	1.62		Wanda De Jesus	42	/m/0bgchxw	/m/0bgcj3x	/m/03wcfv7
+*/
+
+
 package agilenlp;
 
 

@@ -1,8 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+PURPOSE:    Object which represents each individual name cluster and the two fields associated with the name cluster.  
+            Character name and the freebase_character_id
+
+
+DATA EXAMPLE
+Elizabeth Swann	/m/0k1xvz
+Elizabeth Swann	/m/0k1x_d
+Elizabeth Swann	/m/0k1xxy
+*/
+
+
 package agilenlp;
 
 public class NameCluster {
