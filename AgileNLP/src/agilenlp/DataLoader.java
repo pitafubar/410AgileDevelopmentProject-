@@ -17,7 +17,12 @@ import java.util.ArrayList;
 
 public class DataLoader {
  
-    //GetMovies loads all Movies from movie.tsv and returns an array list of movie objects
+/***************************************************************************
+* public static ArrayList GetMovies()
+* -----------------------------------
+* GetMovies loads all Movies from movie.tsv and returns an array list of movie objects
+* **************************************************************************
+*/
     public static ArrayList GetMovies()
     {
         ArrayList a = new ArrayList();
@@ -49,7 +54,13 @@ public class DataLoader {
     }
     
     
-    //GetPlotSummaries loads all PlotSummaries from the plot summary.tsv and returns an array list of plot summary objects
+/***************************************************************************
+* public static ArrayList GetPlotSummaries()
+* -----------------------------------
+* GetPlotSummaries loads all PlotSummaries from the plot summary.tsv and returns an array list of plot summary objects
+* 
+* **************************************************************************
+*/
     public static ArrayList GetPlotSummaries()
     {
         ArrayList a = new ArrayList();
@@ -81,7 +92,13 @@ public class DataLoader {
     }
 
     
-    //GetCharacters loads all Characters from character.tsv and returns an array list of character objects
+/***************************************************************************
+* public static ArrayList GetCharacters()
+* -----------------------------------
+* GetCharacters loads all Characters from character.tsv and returns an array list of character objects
+* 
+* **************************************************************************
+*/
     public static ArrayList GetCharacters()
     {
         ArrayList a = new ArrayList();
@@ -113,7 +130,13 @@ public class DataLoader {
     }
     
 
-    //GetNameClusters loads all NameClusters from the name cluster text file and returns an array list of name cluster objects
+/***************************************************************************
+* public static ArrayList GetNameClusters()
+* -----------------------------------
+* GetNameClusters loads all NameClusters from the name cluster text file and returns an array list of name cluster objects
+* 
+* **************************************************************************
+*/
     public static ArrayList GetNameClusters()
     {
         ArrayList a = new ArrayList();
