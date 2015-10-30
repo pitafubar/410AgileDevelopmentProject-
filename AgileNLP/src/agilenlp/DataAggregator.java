@@ -7,8 +7,10 @@ PURPOSE:    DataAggregator is going to load all the data and then merge the data
             So one object will contain ALL data merged together.
             
             The dataagregator will be responsible for this.
-            Some entity MovieMaster (or something like that) will be the object that contains all this data together.
+            The entity MovieComposite will be the object that contains all this data together.
 
+            Lastly, the idea is that our main program will call into DataAggregator, return an array of MovieComposite objects.
+            DataAggregator will call each loader function from DataLoader, and do it's magic munging together.
 */
 
 
