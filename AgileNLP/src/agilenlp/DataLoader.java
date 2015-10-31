@@ -115,7 +115,7 @@ public class DataLoader {
 
                 if(temp.length == 13)
                 {
-                    Movie m = new Movie(temp);
+                    Character m = new Character(temp);
                     a.add(m);
                 }
             }
@@ -153,8 +153,8 @@ public class DataLoader {
 
                 if(temp.length == 2)
                 {
-                    NameCluster ps = new NameCluster(temp);
-                    a.add(ps);
+                    NameCluster nc = new NameCluster(temp);
+                    a.add(nc);
                 }
             }
         }

@@ -5,6 +5,11 @@ PURPOSE:    Movie composite will be an object which represents all movie, charac
 
 package agilenlp;
 
+import java.util.ArrayList;
+
 public class MovieComposite {
-    
+    public Movie movie;
+    public PlotSummary plot_summary;
+    public ArrayList characters = new ArrayList();
+
 }

@@ -28,6 +28,7 @@ public class Character {
     public String freebase_actor_id;
     
         
+   
     public Character (String [] string_array)
     {
     //languages

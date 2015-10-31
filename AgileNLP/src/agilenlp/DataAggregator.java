@@ -16,7 +16,43 @@ PURPOSE:    DataAggregator is going to load all the data and then merge the data
 
 package agilenlp;
 
+import java.util.ArrayList;
+
 
 public class DataAggregator {
-    
+    public static ArrayList GetCompositeMovies()
+    {
+        ArrayList<Movie> movies = DataLoader.GetMovies();
+        ArrayList<Character> characters = DataLoader.GetCharacters();
+        ArrayList<PlotSummary> plot_summaries = DataLoader.GetPlotSummaries();
+        ArrayList<MovieComposite> composite_movies = new ArrayList();
+        
+        for(Movie m: movies)
+        {
+            MovieComposite mc = new MovieComposite();
+            mc.movie = m;
+            
+            //find the plot summary;
+            for(PlotSummary ps: plot_summaries)
+            {
+                if(ps.wikipedia_movie_id == m.wikipedia_movie_id)
+                {
+                    mc.plot_summary = ps;
+                }
+            }
+            
+            for(Character c: characters)
+            {
+                if(c.wikipedia_movie_id == m.wikipedia_movie_id)
+                {
+                    mc.characters.add(c);
+                }
+            }
+
+            composite_movies.add(mc);
+        }
+        //get all the characters for the movie and put into an array list
+        
+        return composite_movies;
+    }
 }
