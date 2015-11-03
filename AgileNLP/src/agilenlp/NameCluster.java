@@ -13,8 +13,8 @@ Elizabeth Swann	/m/0k1xxy
 package agilenlp;
 
 public class NameCluster {
-    public String character_name;
-    public String freebase_character_id;
+    public String character_name = "";
+    public String freebase_character_id = "";
     
         
     public NameCluster (String [] string_array)

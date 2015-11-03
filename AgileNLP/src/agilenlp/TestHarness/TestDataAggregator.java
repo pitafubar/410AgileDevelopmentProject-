@@ -8,6 +8,7 @@ package agilenlp.TestHarness;
 import agilenlp.DataAggregator;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Hashtable;
 
 /**
  *
@@ -21,11 +22,11 @@ public class TestDataAggregator {
 
         start_time = new Date();
         System.out.println("Start Time: " + start_time);
-        ArrayList composite_movies = DataAggregator.GetCompositeMovies();
+        Hashtable composite_movies = DataAggregator.GetCompositeMovies();
         end_time = new Date();
 
         //debugging code
-        System.out.println("Movie Array Size: " + composite_movies.size());
+        System.out.println("Composize Movie Array Size: " + composite_movies.size());
         System.out.println("End Time: " + end_time);
         
     }

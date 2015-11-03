@@ -13,23 +13,27 @@ package agilenlp;
 
 
 public class Character {
-    public String wikipedia_movie_id;
-    public String freebase_movie_id;
-    public String release_date;
-    public String character_name;
-    public String actor_dob;
-    public String actor_gender;
-    public String actor_height_in_meters;
-    public String actor_ethnicity;
-    public String actor_name;
-    public String actor_age_at_movie_release;
-    public String freebase_character_actor_map_id;
-    public String freebase_character_id;
-    public String freebase_actor_id;
+    public String wikipedia_movie_id = "";
+    public String freebase_movie_id = "";
+    public String release_date = "";
+    public String character_name = "";
+    public String actor_dob = "";
+    public String actor_gender = "";
+    public String actor_height_in_meters = "";
+    public String actor_ethnicity = "";
+    public String actor_name = "";
+    public String actor_age_at_movie_release = "";
+    public String freebase_character_actor_map_id = "";
+    public String freebase_character_id = "";
+    public String freebase_actor_id = "";
     
         
-   
-    public Character (String [] string_array)
+   public Character()
+   {
+       
+   }
+
+   public Character (String [] string_array)
     {
     //languages
     //countries

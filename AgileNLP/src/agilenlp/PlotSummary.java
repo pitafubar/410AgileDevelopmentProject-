@@ -11,8 +11,8 @@ DATA EXAMPLE
 package agilenlp;
 
 public class PlotSummary {
-    public String wikipedia_movie_id;
-    public String summary;
+    public String wikipedia_movie_id = "";
+    public String summary = "";
     
         
     public PlotSummary (String [] string_array)

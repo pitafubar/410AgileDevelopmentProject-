@@ -13,12 +13,12 @@ DATA EXAMPLE
 
 
 public class Movie {
-    public String wikipedia_movie_id;
-    public String freebase_movie_id;
-    public String movie_name;
-    public String release_date;
-    public String box_office_revenue;
-    public String runtime;
+    public String wikipedia_movie_id = "";
+    public String freebase_movie_id = "";
+    public String movie_name = "";
+    public String release_date = "";
+    public String box_office_revenue = "";
+    public String runtime = "";
     
         
     public Movie (String [] string_array)
