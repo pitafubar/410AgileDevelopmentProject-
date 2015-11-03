@@ -5,38 +5,40 @@
  */
 package agilenlp.TestHarness;
 
-import agilenlp.DataLoader;
-import agilenlp.Movie;
+import agilenlp.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class OneWordParseTest {
 
     public static void main(String[] args) {
-        
+        ArrayList<MovieComposite> selectedMovies = parseOneWord();
+        for(MovieComposite m: selectedMovies )
+        {
+            System.out.print("Movies are: " +m.movie.movie_name+",");   
+        }
     }
 
-    public ArrayList<String> parseOneWord() {
-        ArrayList<Movie> movies = DataLoader.GetMovies();
-        ArrayList<String> descriptions = DataLoader.GetPlotSummaries();
-        ArrayList<String> titles = new ArrayList<>();
-        for (Movie m : movies) {
-            titles.add(m.movie_name);
-        }
-
+    public static ArrayList<MovieComposite> parseOneWord() {
+        ArrayList<MovieComposite> movies = DataAggregator.GetCompositeMovies();
+        
         Scanner input = new Scanner(System.in);
         System.out.print("Type a keyword to query");
         String query = input.next();
 
-        ArrayList<String> parsedTitles = new ArrayList<>();
-
-        for (String s : descriptions) {
-            if (s.equalsIgnoreCase(query)) {
-                int index = descriptions.indexOf(s) - 1;
-                parsedTitles.add(descriptions.get(index));
+        ArrayList<MovieComposite> parsedTitles = new ArrayList<>();
+        
+        for(MovieComposite m: movies)
+        {
+            if(m.plot_summary.summary.toLowerCase().contains(query))
+            {
+                parsedTitles.add(m);
+            }
+            else if(m.movie.movie_name.toLowerCase().contains(query))
+            {
+                parsedTitles.add(m);
             }
         }
-
         return parsedTitles;
 
     }
